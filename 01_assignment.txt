@@ -1,0 +1,11 @@
+Hi Raza,
+
+We have our first assignment ready for you.  It should be a fairly easy and straight-forward assignment that I would assume would take you one day to complete.  We need to create a new email template using the mustache templating framework that we have been using.
+
+The new template is named venuechange.mustache.  I have created an unformatted version of the template.  Please format the message using the new_host_event.mustache file as a template.  A few things to note:
+
+1) No headline (like the one in invitation.mustache) is required
+2) Format for date is mmm. dd, yyyy  (ex. Oct. 23, 2012)
+3) The link to the event details page should be formatted the same way it is in the invitation template.
+4) Please create a text file with sample data so that we can preview and test the template prior to implementation.
+5) I have placed a copy of this file as well as venuechange.mustache and new_host_event.mustache

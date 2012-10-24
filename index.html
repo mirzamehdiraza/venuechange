@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Host Committee Mustache Processor</title> 
+  <meta charset="utf-8">
+	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="mustache.js"></script>
+	<script type="text/javascript">
+ 
+var template, data, html;
+var gotTemplate, gotData;
+ 
+function getChange() {
+ 
+  gotTemplate = gotData = false;
+ 
+  $.get( "new_host_event.mustache", null, function( ajaxData ) {
+    template = ajaxData;
+    gotTemplate = true;
+    if ( gotData ) processTemplate();
+  } ); 
+ 
+  $.getJSON( "testData.txt", null, function( ajaxData ) {
+    data = ajaxData;
+    gotData = true;
+    if ( gotTemplate ) processTemplate();
+  } ); 
+}
+ 
+function processTemplate() {
+  html = Mustache.render( template, data );
+  $('#changeVenue').html( html );
+}
+   
+  </script>
+  
+</head>
+
+<body onLoad="getChange()">
+
+	<!--Start testTemplate.mustache file-->
+	<div id="changeVenue"> </div>
+	<!--End testTemplate.mustache file-->
+	
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,11 @@
+﻿event_name
+event_year
+event_day
+event_month
+event_ampm	
+event_start_time
+event_end_time
+venue_name
+venue_address
+event_url
+site_url

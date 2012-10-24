@@ -1,0 +1,14 @@
+{
+	"event_name": "Birthday",
+	"event_year": 2012,
+	"event_day": 25,
+	"event_month": "Octber",
+	"event_ampm": "PM",	
+	"event_start_time": 7,
+	"event_end_time": 10,
+	"venue_name": "ROGUE BAR & RESTURANT",
+	"venue_address": "5th Avenue (7th St.)",
+	"event_url": "www.hostcommittee.com/events",
+	"site_url": "www.hostcommittee.com/"
+	
+}
