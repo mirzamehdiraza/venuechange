@@ -15,7 +15,7 @@ function getChange() {
  
   gotTemplate = gotData = false;
  
-  $.get( "new_host_event.mustache", null, function( ajaxData ) {
+  $.get( "venuechange.mustache", null, function( ajaxData ) {
     template = ajaxData;
     gotTemplate = true;
     if ( gotData ) processTemplate();

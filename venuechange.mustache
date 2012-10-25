@@ -1,13 +1,34 @@
-Subject line: Important: {{event_name}} Location Change
+<table bgcolor="#ebebeb" width="533">		
+	<tr>
 
-Hello, 
+		<td  colspan="3" align="center" style="">
+			<h3 style="font-size: 16px; font-weight: normal; margin-bottom: 40px; margin-top: 15px;">Important: {{event_name}} Location Change</h3>
+		</td>
+		
 
-We are writing because you were invited by a friend to the "{{event_name}}" party on {{event_month}}. {{event_day}}, {{event_year}} from {{event_start_time}} - {{event_end_time}} {{event_ampm}}. Just wanted to let you know that the venue has changed to {{venue_name}}.  {{venue_name}} is located at {{venue_address}}.  If you haven't bought a ticket, we encourage you to do so now using the link below:
+	</tr>
 
-{{site_url}}{{event_url}}
+	<tr>
+		<td  colspan="3" align="left" style="padding-bottom: 50px; padding-left: 46px; padding-right: 47px;">
+			<p style="width:434px; padding-top: 20px; font-size: 13px; color: #333333; font-family: Georgia; line-height: 22px;">Hello,</p>
 
-We look forward to seeing you on {{event_month}}. {{event_day}}, {{event_year}}. 
+			<p style="width:434px; padding-top: 20px; font-size: 13px; color: #333333; font-family: Georgia; line-height: 22px;">We are writing because you were invited by a friend to the "{{event_name}}" party on {{event_month}}. {{event_day}}, {{event_year}} from {{event_start_time}} - {{event_end_time}} {{event_ampm}}. Just wanted to let you know that the venue has changed to {{venue_name}}.  {{venue_name}} is located at {{venue_address}}.  If you haven't bought a ticket, we encourage you to do so now using the link below: </p>
+		</td>
+	</tr>
 
-Cheers, 
+	<tr>
+		<td  colspan="3" align="left" style="padding-bottom: 30px; padding-left: 45px;">
+			<a href="{{site_url}}{{event_url}}" style="background-color:#000000; padding: 15px; color: #ffffff; text-decoration: none; font-family: Georgia; font-size: 13px;">Go To Event Page</a>
+		</td>
+	</tr>
 
-The Host Committee Team
+	<tr>
+		<td  colspan="3" align="left" style="padding-bottom: 50px; padding-left: 46px; padding-right: 47px;">
+			<p style="width:434px; padding-top: 20px; font-size: 13px; color: #333333; font-family: Georgia; line-height: 22px;">We look forward to seeing you on {{event_month}}. {{event_day}}, {{event_year}}. </p>
+
+			<p style="width:434px; padding-top: 20px; font-size: 13px; color: #333333; font-family: Georgia; line-height: 22px;">Cheers, </p>
+
+			<p style="width:434px; padding-top: 20px; font-size: 13px; color: #333333; font-family: Georgia; line-height: 22px;">-- The Host Committee Team</p>
+		</td>
+	</tr>
+</table>
